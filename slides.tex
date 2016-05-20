@@ -129,14 +129,14 @@
 
   \begin{itemize}
   \item $P : T \to \Type$
-  \item $m : (x : FT) \times \Box_F\ P\ x \to P\ (\theta\ x)$
+  \item $m : (x : FT) \times \Box_F\ P\ x \to P\ (c\ x)$
   \end{itemize}
 
   we get a \emph{dependent algebra morphism}:
 
   \begin{itemize}
   \item $s : (x : T) \to P\ x$
-  \item $s_0 : (x : FT) \to s\ (\theta\ x) = m\ x\ (\actionsection{F}\ s\ x)$
+  \item $s_0 : (x : FT) \to s\ (c\ x) = m\ x\ (\actionsection{F}\ s\ x)$
   \end{itemize}
 
   \begin{block}{Notation}
@@ -531,7 +531,7 @@ where $F : \Type \to \Type$ is a (strictly positive) functor.
    
    \begin{itemize}
    \item $c_0 : F_0 T \to T$
-   \item $c_1 : c_0^* \circ l_T =_T c_0^* \circ r_T$
+   \item $c_1 : c_0^* \circ l_T =_{F_1 T \to T} c_0^* \circ r_T$
    \end{itemize}
 
    where:
